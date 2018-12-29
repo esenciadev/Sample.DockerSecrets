@@ -1,0 +1,1 @@
+This is a sample repo to demonstrate the functionality in the [Essentials package](https://github.com/esenciadev/Essentials.AspNetCore.Docker)
