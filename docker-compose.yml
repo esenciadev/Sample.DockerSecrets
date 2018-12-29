@@ -1,0 +1,18 @@
+version: "3.2"
+
+services:
+  app:
+    image: sample
+    secrets:
+      - mysecrets__codeword
+      - mysecrets__nestedsecrets__othercode
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+    ports:
+    - "9999:80"
+
+secrets:
+  mysecrets__codeword:
+    external: true
+  mysecrets__nestedsecrets__othercode:
+    external: true
